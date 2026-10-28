@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "pack1",
+    "title": "Everyday Echoes",
+    "description": "Kitchens, maps, wardrobes and words with a second life."
+  },
+  "levels": [
+    {
+      "id": "pack1_lvl01",
+      "packId": "pack1",
+      "title": "Market Morning",
+      "categories": [
+        {
+          "id": "g1", "title": "CITRUS FRUITS", "difficultyTier": 1,
+          "tiles": ["LEMON", "LIME", "ORANGE", "GRAPEFRUIT"],
+          "triviaFact": "Grapefruit arose in Barbados as a natural cross between the pomelo and the sweet orange."
+        },
+        {
+          "id": "g2", "title": "SHADES OF GREEN", "difficultyTier": 2,
+          "tiles": ["OLIVE", "MINT", "EMERALD", "JADE"],
+          "triviaFact": "Jade is a name shared by two different minerals, jadeite and nephrite, both prized for carving."
+        },
+        {
+          "id": "g3", "title": "COFFEE DRINKS", "difficultyTier": 3,
+          "tiles": ["LATTE", "MOCHA", "ESPRESSO", "CAPPUCCINO"],
+          "triviaFact": "Cappuccino is named after the Capuchin friars, whose brown hooded habits matched the drink's color."
+        },
+        {
+          "id": "g4", "title": "___CAKE", "difficultyTier": 4,
+          "tiles": ["PAN", "CUP", "CHEESE", "SHORT"],
+          "triviaFact": "Shortcake is crumbly because short once meant easily broken, describing pastry rich in fat."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["LIME"],
+          "note": "LIME is also a shade of green, but OLIVE, MINT, EMERALD and JADE already complete the greens, so LIME belongs with the citrus."
+        },
+        {
+          "tiles": ["CUP"],
+          "note": "CUP suggests coffee, yet the four drinks are complete without it; CUP joins PAN, CHEESE and SHORT to make cakes."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl02",
+      "packId": "pack1",
+      "title": "Home Comforts",
+      "categories": [
+        {
+          "id": "g1", "title": "BEDDING", "difficultyTier": 1,
+          "tiles": ["PILLOW", "SHEET", "DUVET", "BLANKET"],
+          "triviaFact": "The word duvet comes from French, where it originally meant down, the soft feathers used as filling."
+        },
+        {
+          "id": "g2", "title": "THINGS WITH KEYS", "difficultyTier": 2,
+          "tiles": ["PIANO", "MAP", "LOCK", "TYPEWRITER"],
+          "triviaFact": "A map key, also called a legend, explains the symbols and colors used on the map."
+        },
+        {
+          "id": "g3", "title": "___BOARD", "difficultyTier": 3,
+          "tiles": ["CHESS", "SKATE", "DASH", "SURF"],
+          "triviaFact": "Skateboarding and surfing both made their Olympic debuts at the Tokyo 2020 Games, held in 2021."
+        },
+        {
+          "id": "g4", "title": "___CASE", "difficultyTier": 4,
+          "tiles": ["BOOK", "SUIT", "BRIEF", "STAIR"],
+          "triviaFact": "The briefcase is named after briefs, the written case summaries that lawyers carry to court."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["PILLOW"],
+          "note": "PILLOW makes pillowcase, but BOOK, SUIT, BRIEF and STAIR already complete the ___CASE set, and the bedding needs PILLOW."
+        },
+        {
+          "tiles": ["SHEET"],
+          "note": "SHEET music sits on a PIANO, but a sheet has no keys; it stays with the bedding."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl03",
+      "packId": "pack1",
+      "title": "Map Room",
+      "categories": [
+        {
+          "id": "g1", "title": "RIVERS", "difficultyTier": 1,
+          "tiles": ["NILE", "AMAZON", "DANUBE", "THAMES"],
+          "triviaFact": "The Danube flows through or along the borders of ten countries, more than any other river."
+        },
+        {
+          "id": "g2", "title": "EUROPEAN CAPITALS", "difficultyTier": 2,
+          "tiles": ["ROME", "MADRID", "VIENNA", "OSLO"],
+          "triviaFact": "Oslo was renamed Christiania in 1624 and only took back its medieval name in 1925."
+        },
+        {
+          "id": "g3", "title": "ISLAND NATIONS", "difficultyTier": 3,
+          "tiles": ["CUBA", "MALTA", "JAPAN", "ICELAND"],
+          "triviaFact": "The three largest islands of the Maltese archipelago are Malta, Gozo and Comino."
+        },
+        {
+          "id": "g4", "title": "FOODS NAMED AFTER PLACES", "difficultyTier": 4,
+          "tiles": ["CHEDDAR", "HAMBURGER", "DIJON", "BOLOGNESE"],
+          "triviaFact": "In Italy, bolognese sauce is called ragù alla bolognese, after the city of Bologna."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["VIENNA"],
+          "note": "VIENNA hints at Vienna sausages, but the place-named foods are complete without it, and it is needed as a capital alongside ROME, MADRID and OSLO."
+        },
+        {
+          "tiles": ["AMAZON"],
+          "note": "AMAZON may suggest a company or a warrior, but on this board it is simply one of the four great rivers."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl04",
+      "packId": "pack1",
+      "title": "Night Shift",
+      "categories": [
+        {
+          "id": "g1", "title": "CREATURES OF THE NIGHT", "difficultyTier": 1,
+          "tiles": ["OWL", "BADGER", "MOTH", "HEDGEHOG"],
+          "triviaFact": "A hedgehog's back carries thousands of spines, which rise when it curls into a defensive ball."
+        },
+        {
+          "id": "g2", "title": "LOUD NOISES", "difficultyTier": 2,
+          "tiles": ["DIN", "ROAR", "CLATTER", "HUBBUB"],
+          "triviaFact": "Clatter is an imitative word, meaning its sound echoes the rattling noise it describes."
+        },
+        {
+          "id": "g3", "title": "SWUNG TO HIT A BALL", "difficultyTier": 3,
+          "tiles": ["BAT", "CLUB", "RACKET", "PADDLE"],
+          "triviaFact": "Table tennis rules require black rubber on one side of the paddle and a bright color on the other."
+        },
+        {
+          "id": "g4", "title": "HIDDEN NUMBERS", "difficultyTier": 4,
+          "tiles": ["OFTEN", "CANINE", "WEIGHT", "ALONE"],
+          "triviaFact": "Weight hides eight, and both keep a silent gh that Middle English speakers once pronounced."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["BAT"],
+          "note": "BAT is a classic night creature, but OWL, BADGER, MOTH and HEDGEHOG fill that group; BAT completes the things swung to hit a ball."
+        },
+        {
+          "tiles": ["RACKET"],
+          "note": "A RACKET is also a loud noise, yet DIN, ROAR, CLATTER and HUBBUB already make four, and the tennis racket is needed."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl05",
+      "packId": "pack1",
+      "title": "Pantry Raid",
+      "categories": [
+        {
+          "id": "g1", "title": "PASTA SHAPES", "difficultyTier": 1,
+          "tiles": ["PENNE", "FUSILLI", "RIGATONI", "FARFALLE"],
+          "triviaFact": "Farfalle means butterflies in Italian, and the pinched shape is also sold as bow-tie pasta."
+        },
+        {
+          "id": "g2", "title": "KITCHEN HERBS", "difficultyTier": 2,
+          "tiles": ["BASIL", "THYME", "PARSLEY", "DILL"],
+          "triviaFact": "Basil, thyme and mint all belong to the same plant family, known to botanists as Lamiaceae."
+        },
+        {
+          "id": "g3", "title": "GIRLS' NAMES FROM PLANTS", "difficultyTier": 3,
+          "tiles": ["ROSEMARY", "IVY", "HOLLY", "POPPY"],
+          "triviaFact": "Only female holly plants produce the bright red berries that decorate winter wreaths."
+        },
+        {
+          "id": "g4", "title": "___ ROLL", "difficultyTier": 4,
+          "tiles": ["EGG", "SPRING", "SAUSAGE", "SWISS"],
+          "triviaFact": "A Swiss roll is a thin sponge cake spread with jam or cream and rolled into a spiral."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["ROSEMARY"],
+          "note": "ROSEMARY is a kitchen herb too, but BASIL, THYME, PARSLEY and DILL complete the herbs, leaving ROSEMARY with the plant-based girls' names."
+        },
+        {
+          "tiles": ["BASIL"],
+          "note": "BASIL is also a first name, but it is traditionally a boy's name, so it cannot join the girls' names."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl06",
+      "packId": "pack1",
+      "title": "High Street",
+      "categories": [
+        {
+          "id": "g1", "title": "TRADITIONAL TRADES", "difficultyTier": 1,
+          "tiles": ["BAKER", "PLUMBER", "TAILOR", "BUTCHER"],
+          "triviaFact": "Plumbers are named after plumbum, the Latin word for lead, once widely used for water pipes."
+        },
+        {
+          "id": "g2", "title": "CHESS PIECES", "difficultyTier": 2,
+          "tiles": ["BISHOP", "ROOK", "PAWN", "KNIGHT"],
+          "triviaFact": "In early chess the bishop was an elephant, a piece Arabic players called al-fil."
+        },
+        {
+          "id": "g3", "title": "THINGS WITH A CROWN", "difficultyTier": 3,
+          "tiles": ["KING", "TOOTH", "TREE", "ANCHOR"],
+          "triviaFact": "Dentists call the part of a tooth visible above the gum line its crown."
+        },
+        {
+          "id": "g4", "title": "STARTS WITH A METAL", "difficultyTier": 4,
+          "tiles": ["TINDER", "IRONY", "LEADER", "GOLDFISH"],
+          "triviaFact": "Irony has nothing to do with iron; it comes from the Greek eironeia, meaning feigned ignorance."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["KING"],
+          "note": "KING is a chess piece, but BISHOP, ROOK, PAWN and KNIGHT complete the chess set, and the KING is needed among things with a crown."
+        },
+        {
+          "tiles": ["PLUMBER"],
+          "note": "PLUMBER secretly hides lead through Latin plumbum, but it does not start with a metal word; it is one of the trades."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl07",
+      "packId": "pack1",
+      "title": "Wardrobe Mix-Up",
+      "categories": [
+        {
+          "id": "g1", "title": "CLOTHING", "difficultyTier": 1,
+          "tiles": ["SCARF", "GLOVE", "JUMPER", "SOCK"],
+          "triviaFact": "In British English a jumper is a knitted sweater, but in American English it is a pinafore dress."
+        },
+        {
+          "id": "g2", "title": "DOG SOUNDS", "difficultyTier": 2,
+          "tiles": ["WOOF", "YAP", "GROWL", "WHINE"],
+          "triviaFact": "The basenji, an African hunting dog, rarely barks and is known for a yodel-like call."
+        },
+        {
+          "id": "g3", "title": "CAR PARTS IN BRITISH ENGLISH", "difficultyTier": 3,
+          "tiles": ["BONNET", "BOOT", "EXHAUST", "WINDSCREEN"],
+          "triviaFact": "British drivers open the bonnet to check the engine, while American drivers call that panel the hood."
+        },
+        {
+          "id": "g4", "title": "HIDDEN BODY PARTS", "difficultyTier": 4,
+          "tiles": ["CHINA", "PEARL", "LEGEND", "SHINE"],
+          "triviaFact": "The shin is the front of the lower leg, where the tibia lies just beneath the skin."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["BONNET", "BOOT"],
+          "note": "BONNET and BOOT are things you wear, but SCARF, GLOVE, JUMPER and SOCK already complete the clothing; here they are British car parts."
+        }
+      ]
+    },
+    {
+      "id": "pack1_lvl08",
+      "packId": "pack1",
+      "title": "Heart Strings",
+      "categories": [
+        {
+          "id": "g1", "title": "MUSICAL INSTRUMENTS", "difficultyTier": 1,
+          "tiles": ["ORGAN", "HORN", "HARP", "DRUM"],
+          "triviaFact": "Harps appear in Mesopotamian art from more than 4,000 years ago, among the oldest instruments known."
+        },
+        {
+          "id": "g2", "title": "BODY ORGANS", "difficultyTier": 2,
+          "tiles": ["LIVER", "LUNG", "HEART", "KIDNEY"],
+          "triviaFact": "The human liver can regrow after part of it is removed, which makes living-donor transplants possible."
+        },
+        {
+          "id": "g3", "title": "THINGS YOU CAN BREAK", "difficultyTier": 3,
+          "tiles": ["RECORD", "PROMISE", "SILENCE", "NEWS"],
+          "triviaFact": "The phrase broken record comes from scratched vinyl that skips and repeats the same few seconds."
+        },
+        {
+          "id": "g4", "title": "___ BEAN", "difficultyTier": 4,
+          "tiles": ["JELLY", "BROAD", "COFFEE", "STRING"],
+          "triviaFact": "Coffee beans are really the seeds of a fruit that growers call the coffee cherry."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["HEART"],
+          "note": "A HEART can be broken, but RECORD, PROMISE, SILENCE and NEWS make four; the body organs need the HEART."
+        },
+        {
+          "tiles": ["KIDNEY"],
+          "note": "KIDNEY bean is real, but JELLY, BROAD, COFFEE and STRING complete the beans, and KIDNEY is needed among the organs."
+        },
+        {
+          "tiles": ["ORGAN"],
+          "note": "ORGAN echoes the body organs, but LIVER, LUNG, HEART and KIDNEY are the organs here; ORGAN is the instrument."
+        }
+      ]
+    }
+  ]
+}
