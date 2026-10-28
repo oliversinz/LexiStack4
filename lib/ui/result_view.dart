@@ -112,68 +112,81 @@ class ResultView extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
       children: [
         Panel(
-          child: Column(
+          child: Row(
             children: [
-              Semantics(
-                header: true,
-                child: Text(
-                  won ? 'Solved!' : 'Answers revealed',
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w900,
-                    color: p.ink,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 6),
-              if (won)
-                StarRow(stars: g.stars, size: 40)
-              else
-                Text(
-                  '${g.solved.length}/4 groups found',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w700,
-                    color: p.ink,
-                  ),
-                ),
-              const SizedBox(height: 6),
-              Text(
-                '${g.mistakes} ${g.mistakes == 1 ? 'mistake' : 'mistakes'}'
-                '${g.rescues > 0 ? ' · ${g.rescues} extra ${g.rescues == 1 ? 'life' : 'lives'} used' : ''}',
-                style: TextStyle(color: p.inkSoft),
-              ),
-              const SizedBox(height: 10),
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 6,
-                ),
-                decoration: BoxDecoration(
-                  color: p.bg,
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: p.border),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CoinIcon(size: 18, color: p.coin),
-                    const SizedBox(width: 6),
+                    Semantics(
+                      header: true,
+                      child: Text(
+                        won ? 'Solved!' : 'Answers revealed',
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.w900,
+                          color: p.ink,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    if (won)
+                      StarRow(stars: g.stars, size: 34)
+                    else
+                      Text(
+                        '${g.solved.length}/4 groups found',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700,
+                          color: p.ink,
+                        ),
+                      ),
+                    const SizedBox(height: 4),
                     Text(
-                      coins > 0
-                          ? '+$coins coins'
-                          : won
-                          ? 'No coins this time (already rewarded)'
-                          : 'No coins this time',
-                      key: const ValueKey('coins-earned'),
-                      style: TextStyle(
-                        fontWeight: FontWeight.w700,
-                        color: p.ink,
+                      '${g.mistakes} ${g.mistakes == 1 ? 'mistake' : 'mistakes'}'
+                      '${g.rescues > 0 ? ' · ${g.rescues} extra ${g.rescues == 1 ? 'life' : 'lives'} used' : ''}',
+                      style: TextStyle(color: p.inkSoft),
+                    ),
+                    const SizedBox(height: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: p.bg,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(color: p.border),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          CoinIcon(size: 18, color: p.coin),
+                          const SizedBox(width: 6),
+                          Flexible(
+                            child: Text(
+                              coins > 0
+                                  ? '+$coins coins'
+                                  : won
+                                  ? 'No coins (already rewarded)'
+                                  : 'No coins this time',
+                              key: const ValueKey('coins-earned'),
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: p.ink,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
+              if (result != null) ...[
+                const SizedBox(width: 12),
+                ShareGrid(rows: result.rows),
+              ],
             ],
           ),
         ),
@@ -217,39 +230,6 @@ class ResultView extends StatelessWidget {
             ),
           ],
         ),
-        if (share != null) ...[
-          const SizedBox(height: 12),
-          Center(
-            child: Text(
-              share,
-              textAlign: TextAlign.center,
-              style: TextStyle(color: p.inkSoft, fontSize: 13, height: 1.25),
-            ),
-          ),
-        ],
-        const SectionLabel('The four groups'),
-        for (final cat in g.level.categories)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Stack(
-              children: [
-                GroupBanner(category: cat),
-                if (!won && !g.solved.contains(cat.id))
-                  Positioned(
-                    right: 10,
-                    bottom: 8,
-                    child: Text(
-                      'Missed',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w800,
-                        color: tierInk.withValues(alpha: 0.7),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          ),
         if (herrings.isNotEmpty) const SectionLabel('Red herrings'),
         for (final h in herrings)
           Padding(
@@ -317,6 +297,29 @@ class ResultView extends StatelessWidget {
               ),
             ),
           ),
+        const SectionLabel('The four groups'),
+        for (final cat in g.level.categories)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Stack(
+              children: [
+                GroupBanner(category: cat),
+                if (!won && !g.solved.contains(cat.id))
+                  Positioned(
+                    right: 10,
+                    bottom: 8,
+                    child: Text(
+                      'Missed',
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w800,
+                        color: tierInk.withValues(alpha: 0.7),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
       ],
     );
   }
@@ -335,5 +338,45 @@ class ResultView extends StatelessWidget {
       }
     }
     nav.pop();
+  }
+}
+
+/// Spoiler-free preview of the share grid as colored squares (one row per
+/// evaluated guess, in selection order).
+class ShareGrid extends StatelessWidget {
+  const ShareGrid({super.key, required this.rows});
+
+  final List<List<int>> rows;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: '${rows.length} guesses',
+      excludeSemantics: true,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          for (final r in rows.take(10))
+            Padding(
+              padding: const EdgeInsets.only(bottom: 3),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  for (final t in r)
+                    Container(
+                      width: 13,
+                      height: 13,
+                      margin: const EdgeInsets.only(right: 3),
+                      decoration: BoxDecoration(
+                        color: tierColor(t),
+                        borderRadius: BorderRadius.circular(3),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
   }
 }

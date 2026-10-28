@@ -30,11 +30,17 @@ Future<void> loadAppFonts() async {
   await (FontLoader(
     'LexiCondensed',
   )..addFont(bytes('assets/fonts/RobotoCondensed-Bold.ttf'))).load();
-  final flutterRoot = Platform.environment['FLUTTER_ROOT'];
+  // The Material icon font ships with the Flutter SDK; locate it from
+  // FLUTTER_ROOT or from the flutter_tester executable inside bin/cache.
+  final exe = Platform.resolvedExecutable.replaceAll('\\', '/');
+  final cacheAt = exe.indexOf('/bin/cache/');
+  final root =
+      Platform.environment['FLUTTER_ROOT'] ??
+      (cacheAt > 0 ? exe.substring(0, cacheAt) : null);
   final icons = File(
-    '$flutterRoot/bin/cache/artifacts/material_fonts/MaterialIcons-Regular.otf',
+    '$root/bin/cache/artifacts/material_fonts/MaterialIcons-Regular.otf',
   );
-  if (flutterRoot != null && icons.existsSync()) {
+  if (root != null && icons.existsSync()) {
     await (FontLoader('MaterialIcons')..addFont(bytes(icons.path))).load();
   }
 }
@@ -53,6 +59,7 @@ Future<AppController> pumpApp(
   TestClock? clock,
   Size size = const Size(390, 844),
   double textScale = 1.0,
+  Key? boundaryKey,
 }) async {
   tester.view.physicalSize = size * 2;
   tester.view.devicePixelRatio = 2;
@@ -67,7 +74,12 @@ Future<AppController> pumpApp(
   await controller.load();
   // Drop any previous app so a "restart" really starts from scratch.
   await tester.pumpWidget(const SizedBox());
-  await tester.pumpWidget(LexiStackApp(controller: controller));
+  await tester.pumpWidget(
+    RepaintBoundary(
+      key: boundaryKey,
+      child: LexiStackApp(controller: controller),
+    ),
+  );
   await tester.pumpAndSettle();
   return controller;
 }

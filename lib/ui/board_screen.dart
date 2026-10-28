@@ -461,7 +461,7 @@ class _TileGrid extends StatelessWidget {
       builder: (context, c) {
         const gap = 8.0;
         final w = (c.maxWidth - gap * 3) / 4;
-        final h = (w * 0.74).clamp(52.0, 72.0);
+        final h = (w * 0.86).clamp(52.0, 84.0);
         final font = (w * 0.2).clamp(12.0, 17.0);
         final order = game.order;
         return Semantics(

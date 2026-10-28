@@ -52,55 +52,58 @@ class DesktopFrame extends StatelessWidget {
         final mq = MediaQuery.of(context);
         final height = (c.maxHeight - 48).clamp(480.0, 940.0).toDouble();
         final size = Size(maxWidth, height.clamp(0, c.maxHeight).toDouble());
-        return DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: Theme.of(context).brightness == Brightness.light
-                  ? const [
-                      Color(0xFF2B2442),
-                      Color(0xFF4A3B6B),
-                      Color(0xFF7A4E6E),
-                    ]
-                  : const [
-                      Color(0xFF07060B),
-                      Color(0xFF1A1428),
-                      Color(0xFF2B1B33),
-                    ],
+        return Material(
+          type: MaterialType.transparency,
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: Theme.of(context).brightness == Brightness.light
+                    ? const [
+                        Color(0xFF2B2442),
+                        Color(0xFF4A3B6B),
+                        Color(0xFF7A4E6E),
+                      ]
+                    : const [
+                        Color(0xFF07060B),
+                        Color(0xFF1A1428),
+                        Color(0xFF2B1B33),
+                      ],
+              ),
             ),
-          ),
-          child: Stack(
-            children: [
-              const Positioned.fill(child: _BackdropTiles()),
-              Center(
-                child: Container(
-                  width: size.width,
-                  height: size.height,
-                  decoration: BoxDecoration(
-                    color: p.bg,
-                    borderRadius: BorderRadius.circular(32),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0x66000000),
-                        blurRadius: 40,
-                        offset: Offset(0, 18),
-                      ),
-                    ],
-                  ),
-                  clipBehavior: Clip.antiAlias,
-                  child: MediaQuery(
-                    data: mq.copyWith(
-                      size: size,
-                      padding: EdgeInsets.zero,
-                      viewPadding: EdgeInsets.zero,
-                      viewInsets: EdgeInsets.zero,
+            child: Stack(
+              children: [
+                const Positioned.fill(child: _BackdropTiles()),
+                Center(
+                  child: Container(
+                    width: size.width,
+                    height: size.height,
+                    decoration: BoxDecoration(
+                      color: p.bg,
+                      borderRadius: BorderRadius.circular(32),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Color(0x66000000),
+                          blurRadius: 40,
+                          offset: Offset(0, 18),
+                        ),
+                      ],
                     ),
-                    child: child,
+                    clipBehavior: Clip.antiAlias,
+                    child: MediaQuery(
+                      data: mq.copyWith(
+                        size: size,
+                        padding: EdgeInsets.zero,
+                        viewPadding: EdgeInsets.zero,
+                        viewInsets: EdgeInsets.zero,
+                      ),
+                      child: child,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         );
       },
