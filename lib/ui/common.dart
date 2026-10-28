@@ -187,14 +187,18 @@ class Panel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final p = context.palette;
-    return Container(
-      padding: padding ?? const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: color ?? p.surface,
+    // A Material (not a DecoratedBox) so list tiles inside can show ink.
+    return Material(
+      color: color ?? p.surface,
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: p.border),
+        side: BorderSide(color: p.border),
       ),
-      child: child,
+      child: Padding(
+        padding: padding ?? const EdgeInsets.all(16),
+        child: child,
+      ),
     );
   }
 }
@@ -346,14 +350,19 @@ class Wordmark extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          Text(
-            'LEXISTACK',
-            style: TextStyle(
-              fontFamily: kSans,
-              fontWeight: FontWeight.w900,
-              fontSize: 22,
-              letterSpacing: 1.5,
-              color: p.ink,
+          Flexible(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                'LEXISTACK',
+                style: TextStyle(
+                  fontFamily: kSans,
+                  fontWeight: FontWeight.w900,
+                  fontSize: 22,
+                  letterSpacing: 1.5,
+                  color: p.ink,
+                ),
+              ),
             ),
           ),
         ],

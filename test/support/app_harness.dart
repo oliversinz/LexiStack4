@@ -65,6 +65,8 @@ Future<AppController> pumpApp(
     clock: (clock ?? TestClock(DateTime(2026, 10, 28, 12))).call,
   );
   await controller.load();
+  // Drop any previous app so a "restart" really starts from scratch.
+  await tester.pumpWidget(const SizedBox());
   await tester.pumpWidget(LexiStackApp(controller: controller));
   await tester.pumpAndSettle();
   return controller;
