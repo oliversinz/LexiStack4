@@ -291,7 +291,7 @@ String formatReport(ValidationReport r) {
     ValidationMode.partial => 'PARTIAL (development)',
     ValidationMode.candidate => 'CANDIDATE',
   };
-  b.writeln('LexiStack content validation â€” mode: $modeLabel');
+  b.writeln('LexiStack content validation - mode: $modeLabel');
   for (final n in r.notes) {
     b.writeln('  note: $n');
   }
@@ -312,8 +312,8 @@ String formatReport(ValidationReport r) {
     '${r.campaignLevels + r.dailyLevels} levels total.',
   );
   b.writeln(
-    'Result: ${r.errors.length} errors, ${r.warnings.length} warnings'
-    '${r.mode == ValidationMode.partial ? ' (partial catalog â€” not a final pass)' : ''}.',
+    'Result: ${r.errors.length} error(s), ${r.warnings.length} warning(s)'
+    '${r.mode == ValidationMode.partial ? ' (partial catalog - not a final pass)' : ''}.',
   );
   return b.toString();
 }

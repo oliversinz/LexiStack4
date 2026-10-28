@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "pack2",
+    "title": "Science & Nature",
+    "description": "Stars, storms, creatures, elements and the words scientists borrowed."
+  },
+  "levels": [
+    {
+      "id": "pack2_lvl01",
+      "packId": "pack2",
+      "title": "Night Sky",
+      "categories": [
+        {
+          "id": "g1", "title": "PLANETS", "difficultyTier": 1,
+          "tiles": ["MARS", "VENUS", "SATURN", "NEPTUNE"],
+          "triviaFact": "Saturn is the least dense planet, with an average density lower than that of water."
+        },
+        {
+          "id": "g2", "title": "PRECIPITATION", "difficultyTier": 2,
+          "tiles": ["RAIN", "SNOW", "HAIL", "SLEET"],
+          "triviaFact": "Hailstones grow in layers as updrafts carry them repeatedly through freezing parts of a storm cloud."
+        },
+        {
+          "id": "g3", "title": "ROMAN GODS", "difficultyTier": 3,
+          "tiles": ["JUNO", "MINERVA", "VULCAN", "DIANA"],
+          "triviaFact": "Vulcan, the Roman god of the forge, gives his name to the word volcano."
+        },
+        {
+          "id": "g4", "title": "___FLY", "difficultyTier": 4,
+          "tiles": ["BUTTER", "DRAGON", "FIRE", "HOUSE"],
+          "triviaFact": "A firefly's glow comes from bioluminescence, a chemical reaction that gives off almost no heat."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["MARS", "VENUS"],
+          "note": "MARS and VENUS are Roman gods as well as planets, but JUNO, MINERVA, VULCAN and DIANA already complete the gods, so all four planets stay together."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl02",
+      "packId": "pack2",
+      "title": "Garden Party",
+      "categories": [
+        {
+          "id": "g1", "title": "FLOWERS", "difficultyTier": 1,
+          "tiles": ["TULIP", "DAISY", "ORCHID", "LILAC"],
+          "triviaFact": "Tulip bulbs became so valuable in the 1630s Dutch Republic that the episode is called tulip mania."
+        },
+        {
+          "id": "g2", "title": "INSECTS", "difficultyTier": 2,
+          "tiles": ["BEETLE", "ANT", "WASP", "CRICKET"],
+          "triviaFact": "Male crickets chirp by rubbing a scraper on one wing against a toothed ridge on the other."
+        },
+        {
+          "id": "g3", "title": "FOUND IN A FLOWER", "difficultyTier": 3,
+          "tiles": ["PETAL", "SEPAL", "STAMEN", "NECTAR"],
+          "triviaFact": "Sepals are the small leaf-like parts that protect a flower bud before it opens."
+        },
+        {
+          "id": "g4", "title": "___ BEE", "difficultyTier": 4,
+          "tiles": ["BUMBLE", "QUEEN", "SPELLING", "WORKER"],
+          "triviaFact": "Spelling bees borrow an old sense of bee meaning a gathering of people working together."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["QUEEN", "WORKER"],
+          "note": "QUEEN and WORKER describe ant castes too, tempting you toward the insects, but BEETLE, ANT, WASP and CRICKET are complete; both pair with BEE."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl03",
+      "packId": "pack2",
+      "title": "Element Hunt",
+      "categories": [
+        {
+          "id": "g1", "title": "NOBLE GASES", "difficultyTier": 1,
+          "tiles": ["NEON", "ARGON", "HELIUM", "KRYPTON"],
+          "triviaFact": "Helium was detected in the Sun's light in 1868, decades before it was found on Earth."
+        },
+        {
+          "id": "g2", "title": "EVERYDAY METALS", "difficultyTier": 2,
+          "tiles": ["COPPER", "ZINC", "NICKEL", "COBALT"],
+          "triviaFact": "Cobalt takes its name from kobold, a mischievous goblin of German mining folklore."
+        },
+        {
+          "id": "g3", "title": "MONEY NAMES", "difficultyTier": 3,
+          "tiles": ["PENNY", "DIME", "PESO", "RUPEE"],
+          "triviaFact": "The rupee takes its name from the Sanskrit rupya, a word associated with wrought silver."
+        },
+        {
+          "id": "g4", "title": "ELEMENTS NAMED AFTER PLACES", "difficultyTier": 4,
+          "tiles": ["GERMANIUM", "FRANCIUM", "POLONIUM", "AMERICIUM"],
+          "triviaFact": "Marie Curie named polonium after Poland, her homeland, which was not then an independent state."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["NICKEL"],
+          "note": "A NICKEL is a US coin, but PENNY, DIME, PESO and RUPEE already make four money names, so NICKEL stays with the metals."
+        },
+        {
+          "tiles": ["COPPER"],
+          "note": "COPPER's name traces back to Cyprus, yet it is not one of the elements named after modern places; it is an everyday metal."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl04",
+      "packId": "pack2",
+      "title": "Forecast",
+      "categories": [
+        {
+          "id": "g1", "title": "CLOUD TYPES", "difficultyTier": 1,
+          "tiles": ["CIRRUS", "CUMULUS", "STRATUS", "NIMBUS"],
+          "triviaFact": "Cirrus clouds form so high in the sky that they are made almost entirely of ice crystals."
+        },
+        {
+          "id": "g2", "title": "NAMED WINDS", "difficultyTier": 2,
+          "tiles": ["MISTRAL", "SIROCCO", "CHINOOK", "BORA"],
+          "triviaFact": "The mistral is a cold northerly wind that funnels down the Rhone valley to the Mediterranean."
+        },
+        {
+          "id": "g3", "title": "WEATHER INSTRUMENTS", "difficultyTier": 3,
+          "tiles": ["BAROMETER", "HYGROMETER", "ANEMOMETER", "RAIN GAUGE"],
+          "triviaFact": "Evangelista Torricelli built the first mercury barometer in the 1640s."
+        },
+        {
+          "id": "g4", "title": "HIDDEN WEATHER", "difficultyTier": 4,
+          "tiles": ["TRAINER", "WINDOW", "THAILAND", "MISTAKE"],
+          "triviaFact": "Thailand was known to outsiders as Siam until the country officially changed its name in 1939."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["MISTRAL"],
+          "note": "MISTRAL hides MIST just like MISTAKE, but it is needed with SIROCCO, CHINOOK and BORA as a named wind."
+        },
+        {
+          "tiles": ["RAIN GAUGE"],
+          "note": "RAIN GAUGE openly contains rain, but it is an instrument; the hidden weather words conceal it inside other words."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl05",
+      "packId": "pack2",
+      "title": "Animal Kingdom",
+      "categories": [
+        {
+          "id": "g1", "title": "WILD CATS", "difficultyTier": 1,
+          "tiles": ["JAGUAR", "LEOPARD", "CHEETAH", "LYNX"],
+          "triviaFact": "A cheetah can sprint at around 100 kilometers per hour, but only for short bursts."
+        },
+        {
+          "id": "g2", "title": "MARSUPIALS", "difficultyTier": 2,
+          "tiles": ["KOALA", "WOMBAT", "KANGAROO", "OPOSSUM"],
+          "triviaFact": "Wombats are famous for producing cube-shaped droppings, a rarity in the animal kingdom."
+        },
+        {
+          "id": "g3", "title": "COLLECTIVE NOUNS FOR ANIMALS", "difficultyTier": 3,
+          "tiles": ["PRIDE", "POD", "GAGGLE", "PARLIAMENT"],
+          "triviaFact": "A group of whales or dolphins is called a pod, and some orca pods stay together for life."
+        },
+        {
+          "id": "g4", "title": "___ BEAR", "difficultyTier": 4,
+          "tiles": ["POLAR", "TEDDY", "GUMMY", "GRIZZLY"],
+          "triviaFact": "The teddy bear is named after US President Theodore Roosevelt, who refused to shoot a captive bear."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["KOALA"],
+          "note": "People often say koala bear, but a KOALA is a marsupial, not a bear; POLAR, TEDDY, GUMMY and GRIZZLY complete that group."
+        },
+        {
+          "tiles": ["PRIDE"],
+          "note": "PRIDE points at lions and the wild cats, but it is a word for a group of animals, not a cat."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl06",
+      "packId": "pack2",
+      "title": "Lab Notes",
+      "categories": [
+        {
+          "id": "g1", "title": "AUSTRALIAN CITIES", "difficultyTier": 1,
+          "tiles": ["DARWIN", "PERTH", "HOBART", "ADELAIDE"],
+          "triviaFact": "Darwin, capital of Australia's Northern Territory, is named after the naturalist Charles Darwin."
+        },
+        {
+          "id": "g2", "title": "SI UNITS", "difficultyTier": 2,
+          "tiles": ["JOULE", "WATT", "VOLT", "NEWTON"],
+          "triviaFact": "One watt equals one joule of energy transferred every second."
+        },
+        {
+          "id": "g3", "title": "PARTS OF AN ATOM", "difficultyTier": 3,
+          "tiles": ["PROTON", "NEUTRON", "ELECTRON", "NUCLEUS"],
+          "triviaFact": "Protons and neutrons are built from smaller particles called quarks, held together by gluons."
+        },
+        {
+          "id": "g4", "title": "SCIENCE ___", "difficultyTier": 4,
+          "tiles": ["FICTION", "FAIR", "PARK", "TEACHER"],
+          "triviaFact": "The term science fiction was popularized in 1929 by the magazine editor Hugo Gernsback."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["DARWIN", "NEWTON"],
+          "note": "DARWIN and NEWTON look like a pair of famous scientists, but NEWTON is a unit of force and DARWIN is a city in the Northern Territory."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl07",
+      "packId": "pack2",
+      "title": "Workshop",
+      "categories": [
+        {
+          "id": "g1", "title": "ENGINE TYPES", "difficultyTier": 1,
+          "tiles": ["DIESEL", "JET", "STEAM", "PETROL"],
+          "triviaFact": "Rudolf Diesel demonstrated his compression-ignition engine in the 1890s, and it still bears his name."
+        },
+        {
+          "id": "g2", "title": "DRAWING TOOLS", "difficultyTier": 2,
+          "tiles": ["RULER", "PROTRACTOR", "PENCIL", "STENCIL"],
+          "triviaFact": "A protractor measures angles and is usually marked from zero to 180 degrees on a half circle."
+        },
+        {
+          "id": "g3", "title": "FOUR GREAT INVENTIONS OF CHINA", "difficultyTier": 3,
+          "tiles": ["PAPER", "PRINTING", "GUNPOWDER", "COMPASS"],
+          "triviaFact": "The oldest known dated printed book is the Diamond Sutra, printed in China in the year 868."
+        },
+        {
+          "id": "g4", "title": "___PAPER", "difficultyTier": 4,
+          "tiles": ["SAND", "WALL", "TISSUE", "FLY"],
+          "triviaFact": "Flypaper is coated with a sticky substance that traps insects as soon as they land on it."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["COMPASS"],
+          "note": "A COMPASS also draws circles, but RULER, PROTRACTOR, PENCIL and STENCIL complete the drawing tools; the magnetic compass is a great Chinese invention."
+        },
+        {
+          "tiles": ["PAPER"],
+          "note": "PAPER sits right next to the ___PAPER group, but the word itself cannot be completed that way; it is one of the Chinese inventions."
+        }
+      ]
+    },
+    {
+      "id": "pack2_lvl08",
+      "packId": "pack2",
+      "title": "Double Science",
+      "categories": [
+        {
+          "id": "g1", "title": "BURROWING ANIMALS", "difficultyTier": 1,
+          "tiles": ["RABBIT", "MEERKAT", "GOPHER", "ARMADILLO"],
+          "triviaFact": "Armadillo means little armored one in Spanish, after the bony plates covering its back."
+        },
+        {
+          "id": "g2", "title": "CHEMICAL BOND TYPES", "difficultyTier": 2,
+          "tiles": ["IONIC", "COVALENT", "METALLIC", "HYDROGEN"],
+          "triviaFact": "Hydrogen bonds between water molecules help explain why water has an unusually high boiling point."
+        },
+        {
+          "id": "g3", "title": "WORDS FOR A SPY", "difficultyTier": 3,
+          "tiles": ["MOLE", "AGENT", "PLANT", "SLEEPER"],
+          "triviaFact": "A sleeper is an agent placed in a foreign country who stays inactive until called upon."
+        },
+        {
+          "id": "g4", "title": "___ CELL", "difficultyTier": 4,
+          "tiles": ["FUEL", "STEM", "SOLAR", "PRISON"],
+          "triviaFact": "Solar cells convert sunlight directly into electricity using semiconductor materials such as silicon."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["MOLE"],
+          "note": "A MOLE is the classic burrowing animal, but RABBIT, MEERKAT, GOPHER and ARMADILLO fill that group; here MOLE is a spy."
+        },
+        {
+          "tiles": ["PLANT", "SLEEPER"],
+          "note": "PLANT cell and SLEEPER cell both sound right, but FUEL, STEM, SOLAR and PRISON complete the cells, and the spies need both words."
+        }
+      ]
+    }
+  ]
+}

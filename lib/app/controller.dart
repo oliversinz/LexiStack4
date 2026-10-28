@@ -40,10 +40,10 @@ class ActiveGame {
   final Level level;
   final PuzzleGame game;
 
-  /// Share-text first line, e.g. `LexiStack Â· Everyday Echoes #3`.
+  /// Share-text first line, e.g. `LexiStack · Everyday Echoes #3`.
   final String header;
 
-  /// Board subtitle, e.g. `Everyday Echoes Â· Level 3`.
+  /// Board subtitle, e.g. `Everyday Echoes · Level 3`.
   final String subtitle;
 
   /// Civil date for a daily game, null for campaign.
@@ -258,7 +258,7 @@ class AppController extends ChangeNotifier {
       level: level,
       game: game,
       header: campaignShareHeader(pack.title, level.number),
-      subtitle: '${pack.title} Â· Level ${level.number}',
+      subtitle: '${pack.title} · Level ${level.number}',
     );
     _changed();
     return active;
@@ -312,8 +312,9 @@ class AppController extends ChangeNotifier {
     final key = date.toString();
     PuzzleGame? game;
     final saved = progress.daily;
-    if (saved != null && saved.date == key)
+    if (saved != null && saved.date == key) {
       game = _restore(level.id, saved.game);
+    }
     final finished = _historyFor('daily:$key');
     // A finalized daily whose board was not kept is shown from its summary
     // on the home screen; never start a second attempt for the date.
@@ -325,7 +326,7 @@ class AppController extends ChangeNotifier {
       level: level,
       game: game,
       header: dailyShareHeader(key),
-      subtitle: 'Daily Stack Â· $key',
+      subtitle: 'Daily Stack · $key',
       date: key,
     )..result = finished;
     _changed();

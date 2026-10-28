@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "pack4",
+    "title": "Pop Culture & Wordplay",
+    "description": "Films, songs, books, anagrams and sideways thinking."
+  },
+  "levels": [
+    {
+      "id": "pack4_lvl01",
+      "packId": "pack4",
+      "title": "Silver Screen",
+      "categories": [
+        {
+          "id": "g1", "title": "PIXAR FILMS", "difficultyTier": 1,
+          "tiles": ["UP", "CARS", "COCO", "BRAVE"],
+          "triviaFact": "Up was the first animated film ever to open the Cannes Film Festival, in 2009."
+        },
+        {
+          "id": "g2", "title": "BEATLES SONGS", "difficultyTier": 2,
+          "tiles": ["HELP", "YESTERDAY", "MICHELLE", "REVOLUTION"],
+          "triviaFact": "Yesterday is one of the most covered songs ever, recorded by well over a thousand artists."
+        },
+        {
+          "id": "g3", "title": "JAMES BOND FILMS", "difficultyTier": 3,
+          "tiles": ["SKYFALL", "GOLDFINGER", "SPECTRE", "MOONRAKER"],
+          "triviaFact": "Goldfinger was the first James Bond film to win an Academy Award, for its sound effects."
+        },
+        {
+          "id": "g4", "title": "PALINDROMES", "difficultyTier": 4,
+          "tiles": ["KAYAK", "LEVEL", "ROTOR", "MADAM"],
+          "triviaFact": "Kayak reads the same in both directions and comes from the Inuit word qajaq."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["COCO"],
+          "note": "COCO looks almost symmetrical, but backwards it reads OCOC; KAYAK, LEVEL, ROTOR and MADAM are the true palindromes, and COCO is a Pixar film."
+        },
+        {
+          "tiles": ["HELP"],
+          "note": "HELP was also a Beatles film, which can make it look like a movie title group member, but on this board it is the song."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl02",
+      "packId": "pack4",
+      "title": "Bookshelf",
+      "categories": [
+        {
+          "id": "g1", "title": "SHAKESPEARE PLAYS", "difficultyTier": 1,
+          "tiles": ["HAMLET", "MACBETH", "OTHELLO", "CORIOLANUS"],
+          "triviaFact": "Hamlet is Shakespeare's longest play, running to roughly 30,000 words."
+        },
+        {
+          "id": "g2", "title": "BOARD GAMES", "difficultyTier": 2,
+          "tiles": ["SCRABBLE", "MONOPOLY", "CLUEDO", "RISK"],
+          "triviaFact": "Scrabble was invented by architect Alfred Butts in the 1930s under the name Criss-Crosswords."
+        },
+        {
+          "id": "g3", "title": "DICKENS CHARACTERS", "difficultyTier": 3,
+          "tiles": ["SCROOGE", "FAGIN", "PIP", "MICAWBER"],
+          "triviaFact": "Scrooge first appeared in A Christmas Carol, which Dickens published in December 1843."
+        },
+        {
+          "id": "g4", "title": "___ HOUSE", "difficultyTier": 4,
+          "tiles": ["BLEAK", "OPERA", "GREEN", "FULL"],
+          "triviaFact": "A full house in poker is three cards of one rank together with a pair of another rank."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["OTHELLO"],
+          "note": "OTHELLO is also a board game, but SCRABBLE, MONOPOLY, CLUEDO and RISK complete that group, and the plays need OTHELLO."
+        },
+        {
+          "tiles": ["BLEAK"],
+          "note": "BLEAK House is a Dickens novel, which pulls BLEAK toward the Dickens group, but that group is made of characters, not titles."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl03",
+      "packId": "pack4",
+      "title": "Chart Toppers",
+      "categories": [
+        {
+          "id": "g1", "title": "MUSIC GENRES", "difficultyTier": 1,
+          "tiles": ["JAZZ", "BLUES", "REGGAE", "FUNK"],
+          "triviaFact": "Reggae emerged in Jamaica in the late 1960s, growing out of ska and rocksteady."
+        },
+        {
+          "id": "g2", "title": "ONE-NAME SINGERS", "difficultyTier": 2,
+          "tiles": ["ADELE", "SHAKIRA", "MADONNA", "RIHANNA"],
+          "triviaFact": "Shakira, born in Colombia, released her first album, Magia, while she was still a young teenager."
+        },
+        {
+          "id": "g3", "title": "BRITISH BANDS", "difficultyTier": 3,
+          "tiles": ["QUEEN", "OASIS", "BLUR", "COLDPLAY"],
+          "triviaFact": "Bohemian Rhapsody by Queen runs for nearly six minutes and has no repeating chorus."
+        },
+        {
+          "id": "g4", "title": "HIDDEN INSTRUMENTS", "difficultyTier": 4,
+          "tiles": ["HORNET", "BELLOW", "SHARPEN", "SALUTE"],
+          "triviaFact": "The lute, hidden in salute, was a leading instrument of European Renaissance music."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["QUEEN", "OASIS"],
+          "note": "QUEEN and OASIS could pass for one-name acts, but they are bands; ADELE, SHAKIRA, MADONNA and RIHANNA are the solo singers."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl04",
+      "packId": "pack4",
+      "title": "Wordsmith",
+      "categories": [
+        {
+          "id": "g1", "title": "DOG BREEDS", "difficultyTier": 1,
+          "tiles": ["POODLE", "BEAGLE", "BOXER", "DALMATIAN"],
+          "triviaFact": "Dalmatian puppies are born completely white and develop their spots over the following weeks."
+        },
+        {
+          "id": "g2", "title": "WORDS FOR QUIET", "difficultyTier": 2,
+          "tiles": ["MUTE", "HUSHED", "STILL", "TACIT"],
+          "triviaFact": "Tacit comes from the Latin tacitus and describes something understood without being stated."
+        },
+        {
+          "id": "g3", "title": "CHRISTMAS DECORATIONS", "difficultyTier": 3,
+          "tiles": ["BAUBLE", "WREATH", "GARLAND", "MISTLETOE"],
+          "triviaFact": "Mistletoe is a partial parasite that grows on trees, drawing water and nutrients from its host."
+        },
+        {
+          "id": "g4", "title": "ANAGRAMS OF ONE ANOTHER", "difficultyTier": 4,
+          "tiles": ["LISTEN", "SILENT", "TINSEL", "ENLIST"],
+          "triviaFact": "These four words rearrange the same six letters, and so does inlets, a word for small bays."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["SILENT"],
+          "note": "SILENT is the most obvious word for quiet, but MUTE, HUSHED, STILL and TACIT complete that group; SILENT is an anagram of LISTEN."
+        },
+        {
+          "tiles": ["TINSEL"],
+          "note": "TINSEL is a classic Christmas decoration, yet BAUBLE, WREATH, GARLAND and MISTLETOE make four, and the anagram set needs TINSEL."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl05",
+      "packId": "pack4",
+      "title": "Prefix Puzzle",
+      "categories": [
+        {
+          "id": "g1", "title": "BIRDS", "difficultyTier": 1,
+          "tiles": ["WREN", "FINCH", "HERON", "STORK"],
+          "triviaFact": "Herons often stand motionless in shallow water before striking at fish with their sharp bills."
+        },
+        {
+          "id": "g2", "title": "SUPER___", "difficultyTier": 2,
+          "tiles": ["MARKET", "MAN", "NOVA", "STAR"],
+          "triviaFact": "A supernova can briefly outshine an entire galaxy before fading over weeks or months."
+        },
+        {
+          "id": "g3", "title": "___HOOD", "difficultyTier": 3,
+          "tiles": ["CHILD", "NEIGHBOR", "FALSE", "ROBIN"],
+          "triviaFact": "Ballads about Robin Hood date back at least to the 1400s, but no real outlaw has been firmly identified."
+        },
+        {
+          "id": "g4", "title": "ADD ONE LETTER TO MAKE A COUNTRY", "difficultyTier": 4,
+          "tiles": ["SPAN", "CHIN", "MALT", "RAN"],
+          "triviaFact": "Iran was known in the West mainly as Persia until its government asked for the change in 1935."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["ROBIN"],
+          "note": "ROBIN is a bird, but WREN, FINCH, HERON and STORK already complete the birds, and Robin Hood is needed in the ___HOOD set."
+        },
+        {
+          "tiles": ["MAN"],
+          "note": "Add an O to MAN and you get Oman, but SPAN, CHIN, MALT and RAN complete the countries, and SUPERMAN needs MAN."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl06",
+      "packId": "pack4",
+      "title": "Box Office",
+      "categories": [
+        {
+          "id": "g1", "title": "FILM GENRES", "difficultyTier": 1,
+          "tiles": ["WESTERN", "HORROR", "MUSICAL", "THRILLER"],
+          "triviaFact": "Early Westerns include The Great Train Robbery, a silent film of about 12 minutes made in 1903."
+        },
+        {
+          "id": "g2", "title": "BEST PICTURE WINNERS", "difficultyTier": 2,
+          "tiles": ["TITANIC", "GLADIATOR", "ROCKY", "CASABLANCA"],
+          "triviaFact": "Titanic won 11 Academy Awards, tying the record previously set by Ben-Hur."
+        },
+        {
+          "id": "g3", "title": "FILM DIRECTORS", "difficultyTier": 3,
+          "tiles": ["SPIELBERG", "KUBRICK", "SCORSESE", "TARANTINO"],
+          "triviaFact": "Stanley Kubrick's only personal Academy Award was for the visual effects of 2001: A Space Odyssey."
+        },
+        {
+          "id": "g4", "title": "HIDDEN FARM ANIMALS", "difficultyTier": 4,
+          "tiles": ["GOATEE", "PIGMENT", "SCOWL", "HENCE"],
+          "triviaFact": "A goatee is named for its resemblance to the tuft of hair on a billy goat's chin."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["TITANIC"],
+          "note": "TITANIC can suggest a disaster genre, but WESTERN, HORROR, MUSICAL and THRILLER complete the genres; TITANIC is a Best Picture winner."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl07",
+      "packId": "pack4",
+      "title": "Lateral Lounge",
+      "categories": [
+        {
+          "id": "g1", "title": "CARD GAMES", "difficultyTier": 1,
+          "tiles": ["POKER", "BRIDGE", "SNAP", "RUMMY"],
+          "triviaFact": "Rummy games are built around melding, collecting sets or runs of cards to lay down on the table."
+        },
+        {
+          "id": "g2", "title": "THINGS WITH TEETH", "difficultyTier": 2,
+          "tiles": ["COMB", "SAW", "ZIPPER", "GEAR"],
+          "triviaFact": "Gideon Sundback received a patent in 1917 for the separable fastener that became the modern zipper."
+        },
+        {
+          "id": "g3", "title": "THINGS WITH A BRIDGE", "difficultyTier": 3,
+          "tiles": ["NOSE", "VIOLIN", "SHIP", "SPECTACLES"],
+          "triviaFact": "On a violin, the carved support that lifts the strings is held in place only by their pressure, not glue."
+        },
+        {
+          "id": "g4", "title": "THINGS WITH NEEDLES", "difficultyTier": 4,
+          "tiles": ["PINE", "SYRINGE", "HAYSTACK", "TURNTABLE"],
+          "triviaFact": "A turntable's needle, or stylus, traces tiny grooves and turns their wiggles back into sound."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["BRIDGE"],
+          "note": "BRIDGE sits beside a group of things that have a bridge, but a bridge does not have one; it is a card game with POKER, SNAP and RUMMY."
+        }
+      ]
+    },
+    {
+      "id": "pack4_lvl08",
+      "packId": "pack4",
+      "title": "Final Twist",
+      "categories": [
+        {
+          "id": "g1", "title": "FEATHERED FRIENDS", "difficultyTier": 1,
+          "tiles": ["CROW", "EAGLE", "PARROT", "SWAN"],
+          "triviaFact": "Some parrots, such as African greys, can learn and mimic hundreds of words."
+        },
+        {
+          "id": "g2", "title": "QUESTION WORDS", "difficultyTier": 2,
+          "tiles": ["WHAT", "WHERE", "WHEN", "HOW"],
+          "triviaFact": "Journalists call the classic news questions the five Ws, even though one of them is how."
+        },
+        {
+          "id": "g3", "title": "SOUND LIKE LETTERS", "difficultyTier": 3,
+          "tiles": ["QUEUE", "EYE", "JAY", "WHY"],
+          "triviaFact": "Queue comes from the French for tail and first meant a braid of hair in English."
+        },
+        {
+          "id": "g4", "title": "ADD S TO THE FRONT", "difficultyTier": 4,
+          "tiles": ["WORD", "MILE", "PEAR", "HOVEL"],
+          "triviaFact": "Hovel, which becomes shovel with an extra S, originally meant an open shed for animals."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["JAY"],
+          "note": "A JAY is a bird, but CROW, EAGLE, PARROT and SWAN complete the birds; JAY sounds like the letter J."
+        },
+        {
+          "tiles": ["HOW", "WHY"],
+          "note": "HOW becomes SHOW with an S and WHY is a question word, but WORD, MILE, PEAR and HOVEL complete the S set and WHY sounds like Y."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "daily",
+    "title": "Daily Stack",
+    "description": "Eight handcrafted mixed-theme boards that rotate one per day."
+  },
+  "levels": [
+    {
+      "id": "daily_lvl01",
+      "packId": "daily",
+      "title": "Sunday Brunch",
+      "categories": [
+        {
+          "id": "g1", "title": "BREAKFAST CEREALS", "difficultyTier": 1,
+          "tiles": ["PORRIDGE", "MUESLI", "GRANOLA", "CORNFLAKES"],
+          "triviaFact": "Muesli was developed around 1900 by the Swiss doctor Maximilian Bircher-Benner for his patients."
+        },
+        {
+          "id": "g2", "title": "TREES", "difficultyTier": 2,
+          "tiles": ["OAK", "ASH", "BIRCH", "MAPLE"],
+          "triviaFact": "It takes roughly 40 liters of maple sap to make a single liter of maple syrup."
+        },
+        {
+          "id": "g3", "title": "VOLCANO WORDS", "difficultyTier": 3,
+          "tiles": ["LAVA", "MAGMA", "CRATER", "VENT"],
+          "triviaFact": "Molten rock is called magma while underground and lava once it erupts onto the surface."
+        },
+        {
+          "id": "g4", "title": "ANAGRAMS OF FRUITS", "difficultyTier": 4,
+          "tiles": ["LUMP", "PAGER", "AMONG", "CHEAP"],
+          "triviaFact": "Rearranged, these words spell plum, grape, mango and peach."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["ASH"],
+          "note": "ASH is what a volcano spews, but LAVA, MAGMA, CRATER and VENT complete the volcano words, and the trees need ASH."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl02",
+      "packId": "daily",
+      "title": "Big Apple",
+      "categories": [
+        {
+          "id": "g1", "title": "US STATES", "difficultyTier": 1,
+          "tiles": ["TEXAS", "OHIO", "UTAH", "MAINE"],
+          "triviaFact": "Maine is the only US state whose name has just one syllable."
+        },
+        {
+          "id": "g2", "title": "NEW YORK BOROUGHS", "difficultyTier": 2,
+          "tiles": ["BROOKLYN", "QUEENS", "BRONX", "MANHATTAN"],
+          "triviaFact": "Manhattan is the most densely populated of New York City's five boroughs."
+        },
+        {
+          "id": "g3", "title": "IVY LEAGUE SCHOOLS", "difficultyTier": 3,
+          "tiles": ["YALE", "BROWN", "CORNELL", "COLUMBIA"],
+          "triviaFact": "The Ivy League began as an athletic conference, formally created in 1954."
+        },
+        {
+          "id": "g4", "title": "___ BREAD", "difficultyTier": 4,
+          "tiles": ["SODA", "GINGER", "CORN", "SHORT"],
+          "triviaFact": "Irish soda bread rises with baking soda and buttermilk instead of yeast."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["BROWN"],
+          "note": "BROWN bread is real, but SODA, GINGER, CORN and SHORT complete the breads, and the Ivy League needs BROWN."
+        },
+        {
+          "tiles": ["CORNELL"],
+          "note": "CORNELL starts with CORN, which can tempt you toward the breads, but it is the Ivy League university."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl03",
+      "packId": "daily",
+      "title": "Mind & Body",
+      "categories": [
+        {
+          "id": "g1", "title": "BONES", "difficultyTier": 1,
+          "tiles": ["FEMUR", "SKULL", "RIB", "PELVIS"],
+          "triviaFact": "The femur, or thigh bone, is the longest and strongest bone in the human body."
+        },
+        {
+          "id": "g2", "title": "SENSES", "difficultyTier": 2,
+          "tiles": ["TOUCH", "TASTE", "SMELL", "SIGHT"],
+          "triviaFact": "Much of what we call taste comes from smell, which is why food seems bland with a blocked nose."
+        },
+        {
+          "id": "g3", "title": "BASIC TASTES", "difficultyTier": 3,
+          "tiles": ["SWEET", "SOUR", "BITTER", "UMAMI"],
+          "triviaFact": "Umami, the savory flavor of broth and parmesan, was named by the Japanese chemist Kikunae Ikeda."
+        },
+        {
+          "id": "g4", "title": "WAYS TO TEASE", "difficultyTier": 4,
+          "tiles": ["KID", "JOSH", "RAG", "TAUNT"],
+          "triviaFact": "Josh, meaning to tease playfully, has been used in American English since the 1800s."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["RIB"],
+          "note": "To RIB someone means to tease them, but KID, JOSH, RAG and TAUNT already make four, so RIB stays with the bones."
+        },
+        {
+          "tiles": ["TASTE"],
+          "note": "TASTE sits naturally beside SWEET and SOUR, but it is one of the senses; the basic tastes are SWEET, SOUR, BITTER and UMAMI."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl04",
+      "packId": "daily",
+      "title": "High Seas",
+      "categories": [
+        {
+          "id": "g1", "title": "SEA CREATURES", "difficultyTier": 1,
+          "tiles": ["OCTOPUS", "JELLYFISH", "SEAHORSE", "STARFISH"],
+          "triviaFact": "A seahorse father carries the eggs in a pouch until the young are born."
+        },
+        {
+          "id": "g2", "title": "SHADES OF BLUE", "difficultyTier": 2,
+          "tiles": ["NAVY", "TEAL", "AZURE", "INDIGO"],
+          "triviaFact": "Indigo dye was so prized that it was traded as blue gold along ancient trade routes."
+        },
+        {
+          "id": "g3", "title": "PARTS OF A SHIP", "difficultyTier": 3,
+          "tiles": ["HULL", "KEEL", "MAST", "RUDDER"],
+          "triviaFact": "The keel is a ship's backbone, running along the bottom of the hull from bow to stern."
+        },
+        {
+          "id": "g4", "title": "ENGLISH PLACES THAT ARE ALSO WORDS", "difficultyTier": 4,
+          "tiles": ["BATH", "DERBY", "READING", "WELLS"],
+          "triviaFact": "Bath is named after its Roman baths, built around natural hot springs."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["HULL"],
+          "note": "HULL is an English city and an ordinary word, but BATH, DERBY, READING and WELLS complete that set, and the ship needs its HULL."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl05",
+      "packId": "daily",
+      "title": "Game Night",
+      "categories": [
+        {
+          "id": "g1", "title": "CARD SUITS", "difficultyTier": 1,
+          "tiles": ["HEARTS", "SPADES", "CLUBS", "DIAMONDS"],
+          "triviaFact": "The four French suits used on most playing cards today date from 15th-century France."
+        },
+        {
+          "id": "g2", "title": "CHESS TERMS", "difficultyTier": 2,
+          "tiles": ["CHECKMATE", "CASTLING", "STALEMATE", "GAMBIT"],
+          "triviaFact": "Stalemate ends a chess game in a draw, even if one side has far more pieces."
+        },
+        {
+          "id": "g3", "title": "GEMSTONES", "difficultyTier": 3,
+          "tiles": ["RUBY", "SAPPHIRE", "OPAL", "TOPAZ"],
+          "triviaFact": "Rubies and sapphires are the same mineral, corundum, colored differently by trace elements."
+        },
+        {
+          "id": "g4", "title": "PROGRAMMING LANGUAGES", "difficultyTier": 4,
+          "tiles": ["PYTHON", "JAVA", "SWIFT", "RUST"],
+          "triviaFact": "Python is named after the comedy troupe Monty Python, not the snake."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["RUBY"],
+          "note": "RUBY is also a programming language, but PYTHON, JAVA, SWIFT and RUST complete that group, and the gemstones need RUBY."
+        },
+        {
+          "tiles": ["DIAMONDS"],
+          "note": "DIAMONDS are the most famous gemstone, but here they are a card suit alongside HEARTS, SPADES and CLUBS."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl06",
+      "packId": "daily",
+      "title": "Musical Chairs",
+      "categories": [
+        {
+          "id": "g1", "title": "STRING INSTRUMENTS", "difficultyTier": 1,
+          "tiles": ["CELLO", "BANJO", "UKULELE", "SITAR"],
+          "triviaFact": "The sitar has sympathetic strings that are not plucked but vibrate along with the played ones."
+        },
+        {
+          "id": "g2", "title": "BALLROOM AND LATIN DANCES", "difficultyTier": 2,
+          "tiles": ["TANGO", "WALTZ", "SALSA", "FOXTROT"],
+          "triviaFact": "The tango grew up in the late 1800s in the port neighborhoods of Buenos Aires and Montevideo."
+        },
+        {
+          "id": "g3", "title": "NATO ALPHABET", "difficultyTier": 3,
+          "tiles": ["BRAVO", "HOTEL", "KILO", "JULIET"],
+          "triviaFact": "The NATO phonetic alphabet was adopted in the 1950s so radio messages could be understood across languages."
+        },
+        {
+          "id": "g4", "title": "___CHAIR", "difficultyTier": 4,
+          "tiles": ["ARM", "WHEEL", "HIGH", "DECK"],
+          "triviaFact": "A highchair raises a small child to table height so they can eat alongside adults."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["TANGO", "FOXTROT"],
+          "note": "TANGO and FOXTROT are NATO code words, but BRAVO, HOTEL, KILO and JULIET complete that alphabet group, and the dances need both."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl07",
+      "packId": "daily",
+      "title": "Space Race",
+      "categories": [
+        {
+          "id": "g1", "title": "MOONS", "difficultyTier": 1,
+          "tiles": ["EUROPA", "GANYMEDE", "PHOBOS", "TITAN"],
+          "triviaFact": "Ganymede, which orbits Jupiter, is the largest moon in the solar system and bigger than the planet Mercury."
+        },
+        {
+          "id": "g2", "title": "SPACE PIONEERS", "difficultyTier": 2,
+          "tiles": ["GAGARIN", "ARMSTRONG", "ALDRIN", "TERESHKOVA"],
+          "triviaFact": "Valentina Tereshkova became the first woman in space in 1963, orbiting Earth 48 times."
+        },
+        {
+          "id": "g3", "title": "BRIGHT STARS", "difficultyTier": 3,
+          "tiles": ["SIRIUS", "VEGA", "RIGEL", "POLARIS"],
+          "triviaFact": "Sirius is the brightest star in the night sky, about 8.6 light-years from Earth."
+        },
+        {
+          "id": "g4", "title": "HIDDEN CAR BRANDS", "difficultyTier": 4,
+          "tiles": ["AUDIENCE", "AFFORD", "SEATBELT", "MINIMAL"],
+          "triviaFact": "Audi is Latin for listen, a pun on founder August Horch, whose surname means listen in German."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["POLARIS"],
+          "note": "POLARIS is also a vehicle maker, but it is not hidden inside a longer word; here it is the North Star."
+        },
+        {
+          "tiles": ["TITAN"],
+          "note": "TITAN suggests a mythic giant or a rocket, but it is Saturn's largest moon and completes the moons group."
+        }
+      ]
+    },
+    {
+      "id": "daily_lvl08",
+      "packId": "daily",
+      "title": "Kitchen Sink",
+      "categories": [
+        {
+          "id": "g1", "title": "KITCHEN APPLIANCES", "difficultyTier": 1,
+          "tiles": ["TOASTER", "KETTLE", "BLENDER", "MICROWAVE"],
+          "triviaFact": "The microwave oven grew out of radar research after engineer Percy Spencer noticed a candy bar melting."
+        },
+        {
+          "id": "g2", "title": "CHEESES", "difficultyTier": 2,
+          "tiles": ["BRIE", "FETA", "GOUDA", "EDAM"],
+          "triviaFact": "Feta is a protected name in the EU, reserved for brined cheese from Greece made with sheep or goat milk."
+        },
+        {
+          "id": "g3", "title": "TYPES OF DRUM", "difficultyTier": 3,
+          "tiles": ["SNARE", "BONGO", "TABLA", "CONGA"],
+          "triviaFact": "The tabla is a pair of hand drums central to the classical music of northern India."
+        },
+        {
+          "id": "g4", "title": "READ BACKWARDS FOR A NEW WORD", "difficultyTier": 4,
+          "tiles": ["DRAWER", "STRESSED", "SPOOL", "PART"],
+          "triviaFact": "Words that spell a different word in reverse, like drawer and reward, are called semordnilaps."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["KETTLE"],
+          "note": "A KETTLE drum is a real instrument, but SNARE, BONGO, TABLA and CONGA complete the drums, and the appliances need KETTLE."
+        },
+        {
+          "tiles": ["EDAM"],
+          "note": "EDAM reads MADE backwards, but DRAWER, STRESSED, SPOOL and PART complete that set, and the cheeses need EDAM."
+        }
+      ]
+    }
+  ]
+}

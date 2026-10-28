@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "pack3",
+    "title": "World History & Myth",
+    "description": "Gods, empires, wonders and the words that history left behind."
+  },
+  "levels": [
+    {
+      "id": "pack3_lvl01",
+      "packId": "pack3",
+      "title": "Olympus",
+      "categories": [
+        {
+          "id": "g1", "title": "GREEK GODS", "difficultyTier": 1,
+          "tiles": ["ZEUS", "ATHENA", "HERMES", "POSEIDON"],
+          "triviaFact": "Poseidon was the Greek god of the sea, and also of earthquakes and horses."
+        },
+        {
+          "id": "g2", "title": "ANCIENT WONDERS", "difficultyTier": 2,
+          "tiles": ["COLOSSUS", "LIGHTHOUSE", "MAUSOLEUM", "PYRAMID"],
+          "triviaFact": "The Great Pyramid of Giza is the only one of the Seven Wonders of the Ancient World still standing."
+        },
+        {
+          "id": "g3", "title": "NASA PROGRAMS", "difficultyTier": 3,
+          "tiles": ["GEMINI", "MERCURY", "VOYAGER", "ARTEMIS"],
+          "triviaFact": "NASA's Artemis program is named after Apollo's twin sister in Greek mythology."
+        },
+        {
+          "id": "g4", "title": "WORDS FROM MYTH", "difficultyTier": 4,
+          "tiles": ["PANIC", "ECHO", "TANTALIZE", "ATLAS"],
+          "triviaFact": "Tantalize comes from Tantalus, who was punished with food and water forever just out of reach."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["ARTEMIS"],
+          "note": "ARTEMIS is a Greek goddess, but ZEUS, ATHENA, HERMES and POSEIDON already complete the gods; here ARTEMIS is NASA's Moon program."
+        },
+        {
+          "tiles": ["MERCURY"],
+          "note": "MERCURY is the Roman counterpart of HERMES, but the gods on this board are Greek, and MERCURY was also NASA's first crewed program."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl02",
+      "packId": "pack3",
+      "title": "Pharaoh's Court",
+      "categories": [
+        {
+          "id": "g1", "title": "EGYPTIAN GODS", "difficultyTier": 1,
+          "tiles": ["RA", "OSIRIS", "ANUBIS", "HORUS"],
+          "triviaFact": "Anubis, the jackal-headed god, was linked with embalming and with guiding the souls of the dead."
+        },
+        {
+          "id": "g2", "title": "PHARAOHS", "difficultyTier": 2,
+          "tiles": ["RAMESSES", "CLEOPATRA", "KHUFU", "AKHENATEN"],
+          "triviaFact": "Khufu commissioned the Great Pyramid of Giza, the largest of the pyramids there."
+        },
+        {
+          "id": "g3", "title": "WRITING SYSTEMS", "difficultyTier": 3,
+          "tiles": ["HIEROGLYPH", "CUNEIFORM", "RUNES", "OGHAM"],
+          "triviaFact": "Ogham was an early medieval alphabet for Irish, carved as notches along the edges of standing stones."
+        },
+        {
+          "id": "g4", "title": "COMES BEFORE STONE", "difficultyTier": 4,
+          "tiles": ["ROSETTA", "BLARNEY", "STEPPING", "CORNER"],
+          "triviaFact": "Kissing the Blarney Stone in Ireland is said to grant the gift of eloquence."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["ROSETTA"],
+          "note": "ROSETTA feels Egyptian and helped decode writing, but HIEROGLYPH, CUNEIFORM, RUNES and OGHAM are the writing systems; ROSETTA comes before stone."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl03",
+      "packId": "pack3",
+      "title": "Eternal City",
+      "categories": [
+        {
+          "id": "g1", "title": "ITALIAN CITIES", "difficultyTier": 1,
+          "tiles": ["VENICE", "NAPLES", "MILAN", "TURIN"],
+          "triviaFact": "Turin was the first capital of the unified Kingdom of Italy, from 1861 to 1865."
+        },
+        {
+          "id": "g2", "title": "LANDMARKS OF ROME", "difficultyTier": 2,
+          "tiles": ["COLOSSEUM", "PANTHEON", "FORUM", "CATACOMBS"],
+          "triviaFact": "The Pantheon's dome is still the largest unreinforced concrete dome in the world."
+        },
+        {
+          "id": "g3", "title": "NEW SEVEN WONDERS", "difficultyTier": 3,
+          "tiles": ["PETRA", "MACHU PICCHU", "TAJ MAHAL", "CHICHEN ITZA"],
+          "triviaFact": "Petra in Jordan is famous for buildings carved directly into rose-colored sandstone cliffs."
+        },
+        {
+          "id": "g4", "title": "SPELLED WITH ROMAN NUMERALS", "difficultyTier": 4,
+          "tiles": ["VIVID", "CIVIC", "MIMIC", "LIVID"],
+          "triviaFact": "These words use only I, V, X, L, C, D and M, the seven letters of standard Roman numerals."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["COLOSSEUM"],
+          "note": "The COLOSSEUM really is one of the New Seven Wonders, but PETRA, MACHU PICCHU, TAJ MAHAL and CHICHEN ITZA complete that group, and Rome needs its arena."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl04",
+      "packId": "pack3",
+      "title": "Crowns & Thrones",
+      "categories": [
+        {
+          "id": "g1", "title": "QUEENS WHO RULED ENGLAND", "difficultyTier": 1,
+          "tiles": ["VICTORIA", "ELIZABETH", "ANNE", "MARY"],
+          "triviaFact": "Queen Anne became the first monarch of Great Britain when England and Scotland united in 1707."
+        },
+        {
+          "id": "g2", "title": "ROYAL TITLES", "difficultyTier": 2,
+          "tiles": ["TSAR", "KAISER", "SHAH", "SULTAN"],
+          "triviaFact": "Tsar and kaiser both derive from Caesar, the family name of Rome's Julius Caesar."
+        },
+        {
+          "id": "g3", "title": "FAMOUS LAKES", "difficultyTier": 3,
+          "tiles": ["SUPERIOR", "TITICACA", "BAIKAL", "GENEVA"],
+          "triviaFact": "Lake Baikal in Siberia is the deepest lake on Earth, reaching more than 1,600 meters."
+        },
+        {
+          "id": "g4", "title": "KING ___", "difficultyTier": 4,
+          "tiles": ["KONG", "PRAWN", "PIN", "COBRA"],
+          "triviaFact": "The king cobra is the world's longest venomous snake, sometimes exceeding five meters."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["VICTORIA"],
+          "note": "Lake VICTORIA is Africa's largest lake, but SUPERIOR, TITICACA, BAIKAL and GENEVA complete the lakes, and the queens need VICTORIA."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl05",
+      "packId": "pack3",
+      "title": "Norse Sagas",
+      "categories": [
+        {
+          "id": "g1", "title": "NORSE GODS", "difficultyTier": 1,
+          "tiles": ["ODIN", "THOR", "LOKI", "FREYA"],
+          "triviaFact": "Thursday is named after Thor, and Wednesday after Woden, the Old English form of Odin."
+        },
+        {
+          "id": "g2", "title": "VIKING WORLD", "difficultyTier": 2,
+          "tiles": ["LONGSHIP", "SAGA", "FJORD", "RUNE"],
+          "triviaFact": "Viking longships had shallow hulls, letting them cross open seas and also sail far up rivers."
+        },
+        {
+          "id": "g3", "title": "MARVEL HEROES", "difficultyTier": 3,
+          "tiles": ["HULK", "IRON MAN", "WOLVERINE", "DAREDEVIL"],
+          "triviaFact": "Wolverine first appeared in a 1974 issue of The Incredible Hulk before joining the X-Men."
+        },
+        {
+          "id": "g4", "title": "HIDDEN NORSE GODS", "difficultyTier": 4,
+          "tiles": ["AUTHOR", "CODING", "SATYR", "BALDERDASH"],
+          "triviaFact": "Balderdash once meant a frothy jumble of mixed drinks before it came to mean nonsense."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["THOR", "LOKI"],
+          "note": "THOR and LOKI are Marvel characters too, but HULK, IRON MAN, WOLVERINE and DAREDEVIL complete the heroes, leaving both with the Norse gods."
+        },
+        {
+          "tiles": ["AUTHOR"],
+          "note": "AUTHOR hides THOR, which can pull you toward the gods group, but the gods themselves appear as whole words."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl06",
+      "packId": "pack3",
+      "title": "Word Origins",
+      "categories": [
+        {
+          "id": "g1", "title": "WORDS FROM ARABIC", "difficultyTier": 1,
+          "tiles": ["ALGEBRA", "ALCOHOL", "ALGORITHM", "ZENITH"],
+          "triviaFact": "Algorithm comes from al-Khwarizmi, a Persian mathematician whose works were translated into Latin."
+        },
+        {
+          "id": "g2", "title": "WORDS FROM HINDI", "difficultyTier": 2,
+          "tiles": ["SHAMPOO", "JUNGLE", "BUNGALOW", "BANDANA"],
+          "triviaFact": "Shampoo comes from a Hindi word meaning to press or knead, first used for a head massage."
+        },
+        {
+          "id": "g3", "title": "WORDS NAMED AFTER PEOPLE", "difficultyTier": 3,
+          "tiles": ["SANDWICH", "CARDIGAN", "BOYCOTT", "GUILLOTINE"],
+          "triviaFact": "Boycott is named after Charles Boycott, a land agent in Ireland who was shunned by his community in 1880."
+        },
+        {
+          "id": "g4", "title": "WORDS THAT BEGAN AS ACRONYMS", "difficultyTier": 4,
+          "tiles": ["LASER", "RADAR", "SCUBA", "SONAR"],
+          "triviaFact": "Scuba stands for self-contained underwater breathing apparatus."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["CARDIGAN"],
+          "note": "CARDIGAN and BANDANA are both things you wear, but CARDIGAN is named after the Earl of Cardigan, while BANDANA comes from Hindi."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl07",
+      "packId": "pack3",
+      "title": "Big Ideas",
+      "categories": [
+        {
+          "id": "g1", "title": "PHILOSOPHERS", "difficultyTier": 1,
+          "tiles": ["PLATO", "SOCRATES", "ARISTOTLE", "CONFUCIUS"],
+          "triviaFact": "Socrates wrote nothing himself; his ideas survive mainly through the dialogues of his student Plato."
+        },
+        {
+          "id": "g2", "title": "FORMS OF GOVERNMENT", "difficultyTier": 2,
+          "tiles": ["DEMOCRACY", "MONARCHY", "OLIGARCHY", "REPUBLIC"],
+          "triviaFact": "Oligarchy comes from Greek words meaning rule by the few."
+        },
+        {
+          "id": "g3", "title": "GREEK CITY-STATES", "difficultyTier": 3,
+          "tiles": ["ATHENS", "THEBES", "CORINTH", "ARGOS"],
+          "triviaFact": "Corinth controlled a narrow isthmus, letting it profit from trade between two seas."
+        },
+        {
+          "id": "g4", "title": "WORDS FROM GREEK PLACES", "difficultyTier": 4,
+          "tiles": ["SPARTAN", "LACONIC", "MARATHON", "MEANDER"],
+          "triviaFact": "A meander takes its name from the winding Maeander River in what is now Turkey."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["SPARTAN"],
+          "note": "SPARTAN points straight at Sparta, a famous city-state, but the word is an adjective meaning austere; ATHENS, THEBES, CORINTH and ARGOS are the cities."
+        },
+        {
+          "tiles": ["REPUBLIC"],
+          "note": "REPUBLIC is also the title of Plato's best-known dialogue, but here it is a form of government."
+        }
+      ]
+    },
+    {
+      "id": "pack3_lvl08",
+      "packId": "pack3",
+      "title": "Lost Worlds",
+      "categories": [
+        {
+          "id": "g1", "title": "CIVILIZATIONS OF THE AMERICAS", "difficultyTier": 1,
+          "tiles": ["AZTEC", "INCA", "MAYA", "OLMEC"],
+          "triviaFact": "The Olmec carved colossal stone heads, some standing around three meters tall."
+        },
+        {
+          "id": "g2", "title": "ANCIENT CITIES", "difficultyTier": 2,
+          "tiles": ["TROY", "CARTHAGE", "POMPEII", "BABYLON"],
+          "triviaFact": "Pompeii was buried by the eruption of Mount Vesuvius in 79 CE and rediscovered in the 1700s."
+        },
+        {
+          "id": "g3", "title": "EPIC POEMS", "difficultyTier": 3,
+          "tiles": ["ILIAD", "ODYSSEY", "BEOWULF", "AENEID"],
+          "triviaFact": "Beowulf survives in a single manuscript, which was damaged in a library fire in 1731."
+        },
+        {
+          "id": "g4", "title": "___ CALENDAR", "difficultyTier": 4,
+          "tiles": ["GREGORIAN", "JULIAN", "LUNAR", "ADVENT"],
+          "triviaFact": "The Gregorian calendar, introduced in 1582, skips leap days in most century years."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": ["MAYA", "AZTEC"],
+          "note": "The MAYA and AZTEC calendars are famous, but GREGORIAN, JULIAN, LUNAR and ADVENT complete the calendars; both peoples belong with the civilizations."
+        },
+        {
+          "tiles": ["TROY"],
+          "note": "TROY is the setting of the ILIAD, but it is an ancient city here, not a poem."
+        }
+      ]
+    }
+  ]
+}
